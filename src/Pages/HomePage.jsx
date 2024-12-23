@@ -10,7 +10,7 @@ function HomePage() {
   const toggle = useSelector((state) => state.toggleSlice.toggle); // Get toggle state from Redux store
   const [videos, setVideos] = useState([]); // State to hold all videos
   const [filterVideo, setFilteredVideo] = useState([]); // State to hold filtered videos
-  const { data, loading, err } = useFetch("http://localhost:5100/videos"); // Fetch video data
+  const { data, loading, err } = useFetch("https://youtube-clone-g7o0.onrender.com/videos"); // Fetch video data
   const navigateTo = useNavigate(); // Hook to navigate after checking login status
 
   const accessToken = localStorage.getItem("accessToken"); // Get access token from localStorage

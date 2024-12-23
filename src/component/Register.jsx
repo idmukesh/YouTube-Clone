@@ -28,7 +28,7 @@ function Register() {
     }
     try {
       // Send POST request to the backend for registration
-      const response = await fetch("http://localhost:5100/signup", {
+      const response = await fetch("https://youtube-clone-g7o0.onrender.com/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

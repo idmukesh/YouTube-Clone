@@ -13,7 +13,7 @@ function WatchPage() {
   const [suggestedVideos, setSuggestedVideos] = useState([]);
   const [currentVideo, setCurrentVideo] = useState(null);
   const { id } = useParams();
-  const { data, loading, err } = useFetch("http://localhost:5100/videos");
+  const { data, loading, err } = useFetch("https://youtube-clone-g7o0.onrender.com/videos");
   const handleLike = () => setLiked((prev) => !prev);
   const handleSubscribe = () => setSubscribed((prev) => !prev);
 

@@ -17,7 +17,7 @@ function SearchPage() {
         }
     }, [accessToken, navigate]); // Dependency array ensures that the effect runs when accessToken changes
 
-    const { data, loading, err } = useFetch("http://localhost:5100/videos"); // Fetch video data from API
+    const { data, loading, err } = useFetch("https://youtube-clone-g7o0.onrender.com/videos"); // Fetch video data from API
     const [filterVideos, setFilterVideos] = useState([]); // State to hold filtered videos
     const inputValue = useSelector((state) => state.searchSlice.inputValue); // Get search input from Redux store
     const toggle = useSelector((state) => state.toggleSlice.toggle); // Get toggle state from Redux store

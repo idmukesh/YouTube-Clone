@@ -10,7 +10,7 @@ const ChannelPage = () => {
     const navigateTo = useNavigate();
     const loggedInUser = localStorage.getItem("logedInUser");
     // Fetch channel data
-    const { data, loading, err } = useFetch("http://localhost:5100/channels");
+    const { data, loading, err } = useFetch("https://youtube-clone-g7o0.onrender.com/channels");
 
     useEffect(() => {
         if (data) {

@@ -8,7 +8,7 @@ import MobileBottomNavBar from "../component/MobileBottomNavBar"; // Mobile bott
 
 function ShortsPage() {
   // Use custom hook to fetch data for short videos
-  const { data, loading, err } = useFetch("http://localhost:5100/shortvideos");
+  const { data, loading, err } = useFetch("https://youtube-clone-g7o0.onrender.com/shortvideos");
 
   // State hooks for managing video index, comments visibility, and video data
   const [currentIndex, setCurrentIndex] = useState(0);
