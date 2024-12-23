@@ -44,7 +44,7 @@ function Nav() {
             <div className="flex md:space-x-5 items-center">
                 <i className="fa-solid fa-bars md:block hidden cursor-pointer" onClick={handleToggle}></i>
                 <div className="flex space-x-1">
-                    <img src="../../public/youtube_logo.webp" alt="YouTube Logo" width="25px" />
+                    <img src="/youtube_logo.webp" alt="YouTube Logo" width="25px" />
                     <span>YouTube</span>
                 </div>
             </div>
