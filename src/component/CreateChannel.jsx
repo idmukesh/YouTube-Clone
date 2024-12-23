@@ -25,7 +25,7 @@ const CreateChannel = () => {
         }
 
         try {
-            const response = await fetch("http://localhost:5100/channel", {
+            const response = await fetch("https://youtube-clone-g7o0.onrender.com/channel", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
